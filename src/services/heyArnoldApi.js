@@ -4,7 +4,7 @@ const URL = 'https://hey-arnold-api.herokuapp.com/api/v1/characters';
 
 /* eslint-disable max-len */
 export const fetchCharacters = async () => {
-  const res = await fetch('https://hey-arnold-api.herokuapp.com/api/v1/characters');
+  const res = await fetch('https://hey-arnold-api.herokuapp.com/api/v1/characters?perPage=100');
   const json = await res.json();
   // console.log(json);
   return json;
